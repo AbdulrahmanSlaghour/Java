@@ -24,7 +24,7 @@ public class LinearVSBinarySearch {
             
         }
         System.out.print(String.format("Comparisons: %s, ", comparisonCounter));
-        return foundIndex; //since the key wasn't found, return an invalid index
+        return foundIndex; //if the key wasn't found, return an invalid index
     }
 
     public static <T> int ascendingBinarySearch(T[] array, T key) {
@@ -62,7 +62,7 @@ public class LinearVSBinarySearch {
             mid = (left + right) / 2;
         }
         System.out.print(String.format("Comparisons: %s, ", comparisonCounter));
-        return foundIndex;
+        return foundIndex; //if the key wasn't found, return an invalid index
 
     }
 }
